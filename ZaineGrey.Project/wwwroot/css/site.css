@@ -1,4 +1,5 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,300;1,400&display=swap');
+
 .navbar {
     background: transparent;
     padding-top: 1rem;
@@ -12,8 +13,37 @@
 }
 
 .navbar-logo {
-    width:120px;
-    padding:0;
+    width: 120px;
+    padding: 0;
+}
+
+.position-fixed-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    border-radius: 50%;
+    padding: .8rem;
+    background-color: #222;
+    width: 4rem;
+    height: 4rem;
+    cursor: crosshair;
+    z-index: 100;
+    border: none;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.7);
+    transition: background-color .5s ease;
+}
+
+    .position-fixed-btn:focus-within {
+        outline: none;
+    }
+
+    .position-fixed-btn.lightMode {
+        background-color: #f1f0f0ed;
+        transition: background-color .5s ease;
+    }
+
+.darkLightModeimg {
+    width: 100%;
 }
 
 .nav-link {
@@ -27,23 +57,23 @@
 }
 
     .nav-link:hover {
-        font-style:italic;
+        font-style: italic;
     }
-    /* Provide sufficient contrast against white background */
+/* Provide sufficient contrast against white background */
 a {
-  color: inherit;
+    color: inherit;
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
 
 .invert {
-    filter:invert(1) !important;
-    transition:filter 1s ease;
+    filter: invert(1) !important;
+    transition: filter 1s ease;
 }
 
 
@@ -51,34 +81,34 @@ a {
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 
     .navbar {
-        margin-right:15px;
-        backdrop-filter:blur(0);
+        margin-right: 15px;
+        backdrop-filter: blur(0);
     }
 
     .navbar-nav {
-        display:flex;
-        flex-direction:row;
-        gap:2rem;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
     }
 }
 
 @media (min-width: 1880px) {
     body {
-      background-position:0 -700px;
+        background-position: 0 -700px;
     }
 
     #Home h1 {
-        margin-top:4rem;
-        font-size:130px;
+        margin-top: 4rem;
+        font-size: 130px;
     }
 
     #Home p {
@@ -95,57 +125,63 @@ html {
 
 
 .border-top {
-  border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
 }
+
 .border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .02);
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .02);
 }
 
 button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+    font-size: 1rem;
+    line-height: inherit;
 }
 
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
-    background-image: url(../images/home/bg-home.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    margin-bottom: 0;
     font-family: "Satoshi", sans-serif;
 }
 
 
 .bg-filter {
-    background-color:rgba(0,0 , 0, 0.45);
+    background-color: rgba(0,0, 0, 0.45);
 }
 
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
 }
 
 
 /*HOME*/
-.home-container {
-   padding-top:12rem;
+
+#Home {
+    background-image: url(../images/home/bg-home.jpg);
+    background-size: cover;
+    background-position: 0 -600px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
+.home-container {
+    padding-top: 12rem;
+}
+
 .home-title {
     font-weight: 500;
     font-size: 55px;
@@ -157,23 +193,26 @@ body {
     color: rgb(255, 255, 255, 0.85);
     padding-top: 2rem;
     font-family: "Satoshi", sans-serif;
-    font-size:1.4rem;
-    line-height:1.3;
+    font-size: 1.4rem;
+    line-height: 1.3;
 }
 
+
 #Home p {
-    margin-bottom:3rem;
+    margin-bottom: 3rem;
 }
 
 .social-wrapper {
-    margin-top:2rem;
+    margin-top: 2rem;
 }
+
 .social-element {
     display: flex;
     align-items: flex-start;
-    gap:1.5rem;
-    filter:invert(1);
+    gap: 1.5rem;
+    filter: invert(1);
 }
+
 .cta {
     position: relative;
     margin: auto;
@@ -191,7 +230,7 @@ body {
         display: block;
         border-radius: 50px;
         background: none;
-        border:.5px solid white;
+        border: .5px solid white;
         width: 45px;
         height: 45px;
         transition: all 0.3s ease;
@@ -203,7 +242,7 @@ body {
         font-size: 18px;
         font-weight: 700;
         letter-spacing: 0.05em;
-        color: #fff ;
+        color: #fff;
     }
 
     .cta svg {
@@ -219,14 +258,14 @@ body {
         transition: all 0.3s ease;
     }
 
-    .cta:focus-within{
-        outline:none;
+    .cta:focus-within {
+        outline: none;
     }
 
     .cta:hover:before {
         width: 100%;
         background: none;
-        outline:none;
+        outline: none;
     }
 
     .cta:hover svg {
@@ -237,39 +276,41 @@ body {
         transform: scale(0.95);
     }
 
-    /*WORK*/
+/*WORK*/
 
 #Work {
-    background-color:#fff;
+    background-color: #fff;
+    color: black;
+    transition: .5s ease;
+    transition-property: color, background-color;
+
 }
 
-    #Work h2 {
-        font-size:50px;
-       text-align:start;
-        margin-top:5rem;
-        margin-left:3rem;
-        font-weight:200;
-        color:#000000;
+    #Work.dark-mode {
+        background-color: #1b1b1b;
+        color: #fff;
     }
 
-@media (min-width: 768px) {
-
     #Work h2 {
-        font-size: 200px;
-        margin-left: 15rem;
+        font-size: 50px;
+        text-align: start;
+        margin-top: 5rem;
+        margin-left: 3rem;
+        font-weight: 200;
+        color: inherit;
     }
-}
 
 .work-img1 {
     width: 100%;
     display: block;
     transition: .5s ease;
 }
+
 .img-wrapper {
-    width:60%;
-    margin: 0 auto;
+    width: 100%;
     overflow: hidden;
 }
+
 .work-img1:hover {
     transform: rotate(-3deg) scale(1.1);
 }
@@ -278,5 +319,57 @@ body {
     font-family: 'Melodrama', serif;
     font-size: 35px;
     font-weight: 400;
-    color:#000000;
+    color: inherit;
+}
+
+.images-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.img-wrapper2 {
+    width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.work-img2 {
+    width: 100%;
+    display: block;
+    transition: .5s ease;
+    margin-top: 3rem;
+}
+
+    .work-img2:hover {
+        transform: rotate(-1deg) scale(1.1);
+    }
+
+.img-wrapper3 {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 8rem;
+}
+
+.work-img3 {
+    width: 100%;
+    display: block;
+    transition: .5s ease;
+}
+
+    .work-img3:hover {
+        transform: rotate(-1deg) scale(1.1);
+    }
+
+
+@media (min-width: 768px) {
+
+    #Work h2 {
+        font-size: 200px;
+    }
+
+    .images-wrapper {
+        flex-direction: row;
+    }
 }
