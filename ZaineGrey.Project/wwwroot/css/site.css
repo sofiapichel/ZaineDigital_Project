@@ -78,10 +78,10 @@
     
 }
 
-    .position-fixed-btn-up.show{
-        visibility:visible;
-        opacity:1;
-        }
+    .position-fixed-btn-up.show, .position-fixed-btn.show {
+        visibility: visible;
+        opacity: 1;
+    }
 
 
     .position-fixed-btn-up:focus-within {

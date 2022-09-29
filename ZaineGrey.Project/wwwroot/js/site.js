@@ -27,7 +27,7 @@ btnDark.addEventListener("click", () => {
         btnDark.querySelector("img.darkLightModeimg").setAttribute("src", "../images/home/Sol.svg")
         btnDark.classList.add("lightMode")
         nav.classList.remove("invert");
-        btnSendContact.classList.add("invert")
+   
     } else {
         btnDark.querySelector("img.darkLightModeimg").setAttribute("src", "../images/home/Luna.svg")
         btnDark.classList.remove("lightMode")
