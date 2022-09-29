@@ -1,0 +1,96 @@
+﻿/*HEADER*/
+#Home-About{
+    background-image: url(../images/About/aboutHome-img.jpg);
+    background-size: cover;
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bg-filter {
+    background-color: rgba(0,0, 0, 0.45);
+}
+
+.Home-About-Wrapper {
+    text-align:center;
+    margin:0 auto;
+    padding-top:250px;
+    height:auto;
+}
+
+.Home-About-Img {
+    width:100%;
+    padding:0 150px 150px 150px;
+}
+
+/*INFO*/
+#Info-About {
+    background-color: #fff;
+    color: black;
+    margin-top:4rem;
+}
+
+.Info-About-Title {
+    text-align: end;
+    font-size: 110px;
+    font-weight:300;
+    font-family: "Satoshi", sans-serif;
+}
+
+.Info-About-Para1 {
+    font-family: 'Melodrama', serif;
+    color: #808080;
+    font-size:1.5rem;
+    text-align:end;
+}
+
+.font-Satoshi {
+    font-family: "Satoshi", sans-serif;
+    font-size: 1.2rem;
+}
+.font-Melodrama {
+    font-family: 'Melodrama', serif;
+}
+ 
+
+.Info-Deco {
+    margin-top: 300px;
+}
+
+.Info-Skills-Title {
+    font-weight:400;
+    font-size:150px;
+}
+
+.list-line {
+    width: 30px;
+    height: 1px;
+    margin-right: 65px;
+    background-color: #c9c9c9;
+}
+.list {
+    list-style:none;
+    align-content:start;
+    padding:0;
+}
+
+.Info-Para2 {
+    font-size: 30px;
+    color:#5b5b5b;
+}
+
+.Info-Para3 {
+    font-size:40px;
+    margin-right:7rem;
+}
+/*MEDIA*/
+@media only screen and (max-width: 776px) {
+    .Info-Deco {
+        display: none;
+    }
+
+    .Info-About-Title {
+        text-align: center;
+        font-size: 55px;
+    }
+}

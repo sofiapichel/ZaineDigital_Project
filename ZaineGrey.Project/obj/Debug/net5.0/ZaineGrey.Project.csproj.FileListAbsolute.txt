@@ -37,3 +37,4 @@ C:\Users\spichel\Documents\.NET-SMS\PROJECTS\ZaineGrey.Project\ZaineGrey.Project
 C:\Users\spichel\Documents\.NET-SMS\PROJECTS\ZaineGrey.Project\ZaineGrey.Project\obj\Debug\net5.0\ZaineGrey.Project.pdb
 C:\Users\spichel\Documents\.NET-SMS\PROJECTS\ZaineGrey.Project\ZaineGrey.Project\obj\Debug\net5.0\ZaineGrey.Project.genruntimeconfig.cache
 C:\Users\spichel\Documents\.NET-SMS\PROJECTS\ZaineGrey.Project\ZaineGrey.Project\obj\Debug\net5.0\ZaineGrey.Project.csproj.CopyComplete
+C:\Users\spichel\Documents\.NET-SMS\PROJECTS\ZaineGrey.Project\ZaineGrey.Project\obj\Debug\net5.0\Razor\Views\About\Index.cshtml.g.cs
